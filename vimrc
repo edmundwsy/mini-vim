@@ -1063,7 +1063,7 @@ endfunction
 	" }
 
 	" file save {
-    nnoremap <Leader>fs :update<CR>
+    nnoremap <Leader>s :update<CR>
   " }
 
 	" Quit normal mode {
@@ -1084,13 +1084,6 @@ endfunction
 		inoremap <C-l> <Right>
 	" }
 
-	" like bash {
-		inoremap <C-a> <Home>
-		inoremap <C-e> <End>
-		inoremap <C-d> <Delete>
-	" }
-
-
 	" Quit visual mode {
     vnoremap v <Esc>
   " }
@@ -1110,10 +1103,15 @@ endfunction
 		nnoremap H ^
 		" jump loop in Pairing characters , such '( ... )', '{  }'
 		nnoremap 5 %
-		" <C-w>H -- 跳转至左方的窗口
-		" <C-w>l -- 跳转至右方的窗口
-		" <C-w>k -- 跳转至上方的窗口
-		" <C-w>j -- 跳转至下方的窗口
+
+    " 跳转至左方的窗口
+		nnoremap <C-h> <C-w>h
+		" 跳转至右方的窗口
+		nnoremap <C-l> <C-w>l	 
+		" 跳转至上方的窗口
+		nnoremap <C-k> <C-w>k
+		" 跳转至下方的窗口
+		nnoremap <C-j> <C-w>j
 	" }
 
 	" Quick command mode
@@ -1123,13 +1121,13 @@ endfunction
 	" :shell
 
 	" Search result highlight countermand
-	nnoremap <Leader>sc :nohlsearch<CR>
+	nnoremap <Leader>uh :nohlsearch<CR>
 
 	" Toggle pastemode
-	nnoremap <Leader>tp :call TogglePasteMode()<CR>
+	nnoremap <Leader>up :call TogglePasteMode()<CR>
 
   " Toggle Line Number
-  nnoremap <Leader>ln :call ToggleLineNumber()<CR>
+  nnoremap <Leader>ul :call ToggleLineNumber()<CR>
 
 	" window-split {
 			" :sp 或 :new -- 上下分割窗口
@@ -1146,13 +1144,13 @@ endfunction
 	" }
 
 	" Command mode shortcut {
-		cnoremap <C-h> <left>
-		cnoremap <C-j> <Down>
-		cnoremap <C-k> <Up>
-		cnoremap <C-l> <Right>
-		cnoremap <C-a> <Home>
-		cnoremap <C-e> <End>
-		cnoremap <C-d> <Delete>
+		" cnoremap <C-h> <left>
+		" cnoremap <C-j> <Down>
+		" cnoremap <C-k> <Up>
+		" cnoremap <C-l> <Right>
+		" cnoremap <C-a> <Home>
+		" cnoremap <C-e> <End>
+		" cnoremap <C-d> <Delete>
 	" }
 
   " 函数 {
