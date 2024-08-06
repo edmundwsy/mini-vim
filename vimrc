@@ -1063,7 +1063,7 @@ endfunction
 	" }
 
 	" file save {
-    nnoremap <Leader>s :update<CR>
+    nnoremap <Leader>u :update<CR>
   " }
 
 	" Quit normal mode {
