@@ -30,7 +30,7 @@ scriptencoding utf-8
 
   " 增强斜体: 1 为增强, 0 为默认
   " 需要终端支持, 终端若不支持并且显示异常, 那么注释此选项可恢复正常
-  " let g:enableItalic = 1
+  let g:enableItalic = 1
 "}
 
 let s:expandfile = expand('%:r')
